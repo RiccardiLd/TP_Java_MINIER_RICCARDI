@@ -12,8 +12,8 @@ public class GuichetPrioritaire extends Guichet{
     public int numéro;
     /**
      * 
-     * @param capacité
-     * @param numéro 
+     * @param capacité capacité du guichet
+     * @param numéro numéro du guichet prioritaire
      */
     public GuichetPrioritaire (int capacité, int numéro) {
         super(capacité);

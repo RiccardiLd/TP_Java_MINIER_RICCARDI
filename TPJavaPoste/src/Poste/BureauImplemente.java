@@ -13,7 +13,7 @@ public class BureauImplemente {
     public Guichet guichets[];
     /**
      * 
-     * @param nb_guichets 
+     * @param nb_guichets nombre de guichets du bureau
      */
     public BureauImplemente(int nb_guichets) {
         this.nb_guichets = nb_guichets;
@@ -21,8 +21,8 @@ public class BureauImplemente {
     }
     /**
      * 
-     * @param capacité
-     * @return 
+     * @param capacité capacité du guichet créé
+     * @return guichet créé
      */
     public Guichet ouvrirNouveauGuichet(int capacité) {
         Guichet nouveauGuichet = new Guichet(capacité); 
@@ -30,7 +30,7 @@ public class BureauImplemente {
     }
     /**
      * 
-     * @param numéro 
+     * @param numéro numéro d'usager à rajouter
      */
     public void ajouterUsager(int numéro) {
         int min = Integer.MAX_VALUE;
@@ -53,8 +53,8 @@ public class BureauImplemente {
     }
     /**
      * 
-     * @param g
-     * @return 
+     * @param g guichet auquel s'affectera la fonction premierUsager
+     * @return premier usager du tableau
      */
     public int premierUsager(Guichet g){
         return g.premierUsager();

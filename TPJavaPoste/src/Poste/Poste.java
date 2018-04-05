@@ -46,9 +46,9 @@ public class Poste {
     
     /**
      * 
-     * @param min
-     * @param max
-     * @return 
+     * @param min minimum
+     * @param max maximum
+     * @return random number between min and max
      */
     public static int getRandomNumber(int min, int max) {
         Random rand = new Random();
