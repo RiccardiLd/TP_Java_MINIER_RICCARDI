@@ -10,7 +10,7 @@ import java.util.Random;
  * @author theo
  */
 public class Poste {
-
+    
     /**
      * @param args the command line arguments
      * 
