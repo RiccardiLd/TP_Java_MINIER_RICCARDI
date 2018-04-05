@@ -6,6 +6,7 @@ package Poste;
 /**
  *
  * @author riccardild
+ * @author theo
  */
 public class GuichetPrioritaire extends Guichet{
     public int numéro;

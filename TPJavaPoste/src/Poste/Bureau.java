@@ -6,6 +6,7 @@ package Poste;
 /**
  *
  * @author riccardild
+ * @author theo
  */
 public interface Bureau {
     public Guichet ouvrirNouveauGuichet (int capacité) ; 

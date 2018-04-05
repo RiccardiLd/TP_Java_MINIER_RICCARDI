@@ -6,6 +6,7 @@ package Poste;
 /**
  *
  * @author riccardild
+ * @author theo
  */
 public class BureauImplemente {
     public int nb_guichets;

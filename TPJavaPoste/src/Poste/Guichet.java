@@ -6,6 +6,7 @@ package Poste;
 /**
  *
  * @author riccardild
+ * @author theo
  */
 public class Guichet {
     // tableau (file d’attente du guichet) privé des numéros entiers d’usagers (*)
