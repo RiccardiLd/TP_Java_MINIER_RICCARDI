@@ -7,6 +7,7 @@ import java.util.Random;
 /**
  *
  * @author riccardild
+ * @author theo
  */
 public class Poste {
 
