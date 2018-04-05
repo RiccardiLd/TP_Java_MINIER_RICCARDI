@@ -17,13 +17,11 @@ public class Guichet {
     public int nb_usagers ; 
     // capacité maximale d’usagers du tableau
     public int capacité ;
-    
     /**
      * 
      * @param capacité 
      */
-    // constructeur
-    public Guichet (int capacité) {
+    public Guichet (int capacité) { // constructeur
         this.capacité = capacité;
         this.id = 0;
         this.nb_usagers = 0;
@@ -33,24 +31,21 @@ public class Guichet {
      * 
      * @return 
      */
-    // retourne true si nombre d’usagers=0, sinon false
-    public boolean guichetVide() {
+    public boolean guichetVide() { // retourne true si nombre d’usagers=0, sinon false
         return (nb_usagers == 0);
     }
     /**
      * 
      * @return 
      */
-    // retourne true si nombre d’usagers=capacité, sinon false 
-    public boolean guichetPlein() {
+    public boolean guichetPlein() { // retourne true si nombre d’usagers=capacité, sinon false 
         return (nb_usagers == capacité);
     }
     /**
      * 
      * @return 
      */
-    // défile et retourne le numéro du premier usager du tableau 
-    public int premierUsager () {
+    public int premierUsager () { // défile et retourne le numéro du premier usager du tableau 
         if(!guichetVide()){
             nb_usagers--;
             usagers[id] = 0;
@@ -66,8 +61,7 @@ public class Guichet {
      * 
      * @param numéro 
      */
-    // ajoute (enfile) un usager dans le tableau
-    public void ajouterUsager (int numéro) {
+    public void ajouterUsager (int numéro) { // ajoute (enfile) un usager dans le tableau
         if(!guichetPlein()){
             usagers[(id+nb_usagers)%capacité] = numéro;
             nb_usagers++;
