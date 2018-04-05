@@ -48,7 +48,6 @@ public class Guichet {
     public int premierUsager () { // défile le premier usager du tableau
         if(!guichetVide()){
             nb_usagers--;
-            usagers[id] = 0;
             // Incrementation circulaire d'id
             if(id == capacité) id = 0;
             else id++;
