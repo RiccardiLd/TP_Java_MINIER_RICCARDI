@@ -3,6 +3,7 @@
  */
 package Poste;
 import java.util.Random;
+import java.util.Scanner;  
 
 /**
  *
@@ -16,6 +17,8 @@ public class Poste {
      * 
      */
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int num;
         int nb_usagers, nb_guichets, capacité;
         
         nb_usagers = getRandomNumber(200, 300);
@@ -45,6 +48,11 @@ public class Poste {
                 System.out.println(" Prochain usager à défiler : " + usager_suivant + ".\n");
             }
         }
+        System.out.println("\n Entrez un numéro de guichet :\n");
+        do{
+          num = sc.nextInt(); 
+        }while(num < 0 || num > nb_guichets);
+    
     }
     
     /**
