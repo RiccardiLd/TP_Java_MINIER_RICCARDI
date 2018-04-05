@@ -48,11 +48,14 @@ public class Poste {
                 System.out.println(" Prochain usager à défiler : " + usager_suivant + ".\n");
             }
         }
-        System.out.println("\n Entrez un numéro de guichet :\n");
-        do{
-          num = sc.nextInt(); 
+        System.out.println("\n Entrez un numéro de guichet entre 1 et " + nb_guichets + ":\n");
+        do {
+            num = sc.nextInt(); 
         }while(num < 0 || num > nb_guichets);
-    
+        
+        capacité = getRandomNumber(10, 15);
+        GuichetPrioritaire guichet = new GuichetPrioritaire(capacité, num);
+        System.out.println(guichet.toString());
     }
     
     /**
