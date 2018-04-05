@@ -30,13 +30,16 @@ public class Poste {
             Bureau.guichets[i] = Bureau.ouvrirNouveauGuichet(capacité);
         }
         
-        for(int i = 1; i < nb_usagers+1; i++) Bureau.ajouterUsager(i);
+        for(int i = 1; i < nb_usagers+1; i++) {
+            Bureau.ajouterUsager(i);
+        }
         
         for(int i = 1; i < nb_guichets+1; i++) {
             System.out.println("\nGuichet numéro " + i + " : \n");
             int usager_suivant = Bureau.premierUsager(Bureau.guichets[i-1]);
-            if(usager_suivant == 0) 
+            if(usager_suivant == 0) {
                 System.out.println("\n Le guichet est vide.\n");
+            }
             else {
                 System.out.println("\n Usager correctement defilé");
                 System.out.println(" Prochain usager à défiler : " + usager_suivant + ".\n");
