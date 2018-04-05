@@ -21,7 +21,7 @@ public class GuichetPrioritaire extends Guichet{
     }
     /**
      * 
-     * @return 
+     * @return string avec spécifications du guichet prioritaire
      */
     @Override
     public String toString() {
