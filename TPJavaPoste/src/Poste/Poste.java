@@ -12,6 +12,7 @@ public class Poste {
 
     /**
      * @param args the command line arguments
+     * 
      */
     public static void main(String[] args) {
         int nb_usagers, nb_guichets, capacité;
@@ -42,6 +43,12 @@ public class Poste {
         }
     }
     
+    /**
+     * 
+     * @param min
+     * @param max
+     * @return 
+     */
     public static int getRandomNumber(int min, int max) {
         Random rand = new Random();
         int n;
