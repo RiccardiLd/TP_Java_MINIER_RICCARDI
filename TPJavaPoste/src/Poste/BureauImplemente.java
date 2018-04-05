@@ -11,17 +11,27 @@ package Poste;
 public class BureauImplemente {
     public int nb_guichets;
     public Guichet guichets[];
-    
+    /**
+     * 
+     * @param nb_guichets 
+     */
     public BureauImplemente(int nb_guichets) {
         this.nb_guichets = nb_guichets;
         this.guichets = new Guichet[nb_guichets];
     }
-    
+    /**
+     * 
+     * @param capacité
+     * @return 
+     */
     public Guichet ouvrirNouveauGuichet(int capacité) {
         Guichet nouveauGuichet = new Guichet(capacité); 
         return nouveauGuichet;
     }
-    
+    /**
+     * 
+     * @param numéro 
+     */
     public void ajouterUsager(int numéro) {
         int min = Integer.MAX_VALUE;
         int id_min = -1;
@@ -41,7 +51,11 @@ public class BureauImplemente {
                                + ".\n");
         }
     }
-    
+    /**
+     * 
+     * @param g
+     * @return 
+     */
     public int premierUsager(Guichet g){
         return g.premierUsager();
     }

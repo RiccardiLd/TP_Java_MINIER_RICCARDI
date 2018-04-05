@@ -10,12 +10,19 @@ package Poste;
  */
 public class GuichetPrioritaire extends Guichet{
     public int numéro;
-    
+    /**
+     * 
+     * @param capacité
+     * @param numéro 
+     */
     public GuichetPrioritaire (int capacité, int numéro) {
         super(capacité);
         this.numéro = numéro;
     }
-    
+    /**
+     * 
+     * @return 
+     */
     @Override
     public String toString() {
         return "\n Le guichet prioritaire " + this.numéro 
