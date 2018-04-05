@@ -33,6 +33,7 @@ public class BureauImplemente {
      * @param numéro numéro d'usager à rajouter
      */
     public void ajouterUsager(int numéro) {
+        ///Tri du guichet le "plus vide"
         int min = Integer.MAX_VALUE;
         int id_min = -1;
         for(int i = 0; i<nb_guichets; i++){
@@ -43,6 +44,7 @@ public class BureauImplemente {
                }
             }
         }
+        ///Dans la condition si au moins un guichet est disponible
         if(id_min < 0) System.out.println("\nLe bureau est saturé.");
         else {
             guichets[id_min].ajouterUsager(numéro);
