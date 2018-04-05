@@ -1,5 +1,5 @@
 /*  Created by riccardild on Apr 4, 2018 3:50:32 PM
- *  (C) Copyright Gianni Riccardi.
+ *  (C) Copyright Gianni Riccardi and Théo Minier.
  */
 package Poste;
 
